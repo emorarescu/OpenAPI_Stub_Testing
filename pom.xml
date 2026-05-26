@@ -144,38 +144,30 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>wagon-maven-plugin</artifactId>
-                <version>3.0.0</version>
+            <!--            <plugin>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.codehaus.mojo</groupId>-->
+            <!--                <artifactId>wagon-maven-plugin</artifactId>-->
+            <!--                <version>3.0.0</version>-->
 
-                <executions>
-                    <execution>
-                        <id>download-sample-yaml</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>download-single</goal>
-                        </goals>
-                        <configuration>
-                            <url>https://filesamples.com/samples/code/yaml/</url>
-                            <fromFile>Homestead.yaml</fromFile>
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <id>download-sample-yaml</id>-->
+            <!--                        <phase>generate-sources</phase>-->
+            <!--                        <goals>-->
+            <!--                            <goal>download-single</goal>-->
+            <!--                        </goals>-->
+            <!--                        <configuration>-->
+            <!--                            <url>https://filesamples.com/samples/code/yaml/</url>-->
 <!--                            <fromFile>Homestead.yaml</fromFile>-->
-<!--                            <repositoryId>nexus</repositoryId>-->
-<!--                            <file>${project.build.directory}/${project.build.finalName}.jar</file>-->
-<!--                            <groupId>${project.groupId}</groupId>-->
-<!--                            <artifactId>${project.artifactId}</artifactId>-->
-<!--                            <version>${project.version}</version>-->
-<!--                            <packaging>jar</packaging>-->
-                            <toDir>${project.basedir}/src/main/resources</toDir>
-<!--                            <outputFileName>sample-yaml.yaml</outputFileName>-->
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--                            <toDir>${project.basedir}/src/main/resources</toDir>-->
+            <!--                        </configuration>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
 <!--            <plugin>-->
 <!--                <groupId>org.openapitools</groupId>-->
 <!--                <artifactId>openapi-generator-maven-plugin</artifactId>-->
