@@ -1,6 +1,7 @@
 package org.example;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.*;
 
@@ -11,6 +12,7 @@ import static org.example.stubs.PaymentStub.setupPaymentStubs;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+@SpringBootApplication
 public class Main {
 
 

@@ -1,14 +1,11 @@
 package org.example;
 
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
-import static org.example.Main.startServer;
-import static org.example.Main.wireMockServer;
 
 public class PaymentApiMethodSourceTest {
 
@@ -31,15 +28,6 @@ public class PaymentApiMethodSourceTest {
                         null
                 )
         );
-    }
-
-    @Tag("RUN_STUB")
-    void runSTUB() throws InterruptedException {
-        startServer();
-        while (true) {
-            Thread.sleep(10000);
-            System.out.println("Server Running: " + wireMockServer.isRunning());
-        }
     }
 
 
