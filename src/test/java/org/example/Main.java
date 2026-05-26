@@ -2,33 +2,19 @@ package org.example;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 
+import java.awt.*;
+
 import static com.github.tomakehurst.wiremock.client.WireMock.configureFor;
-import static io.restassured.RestAssured.given;
 import static org.example.stubs.PaymentStub.setupPaymentStubs;
 
-import com.github.tomakehurst.wiremock.WireMockServer;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import org.example.api.User;
 //import org.junit.jupiter.api.*;
-
-import java.awt.*;
-import java.awt.event.InputEvent;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-
-import static com.github.tomakehurst.wiremock.client.WireMock.*;
-import static org.hamcrest.Matchers.notNullValue;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
 
-    private static WireMockServer wireMockServer;
+    public static WireMockServer wireMockServer;
 
     public static void main(String[] args) throws InterruptedException, AWTException {
 
