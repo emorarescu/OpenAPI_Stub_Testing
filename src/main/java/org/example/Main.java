@@ -1,13 +1,12 @@
 package org.example;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.client.WireMock;
+import org.example.stubs.PaymentStub;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.*;
-
-import static com.github.tomakehurst.wiremock.client.WireMock.configureFor;
-import static org.example.stubs.PaymentStub.setupPaymentStubs;
 
 //import org.junit.jupiter.api.*;
 
@@ -106,9 +105,9 @@ public class Main {
 
     static void startServer() {
         wireMockServer = new WireMockServer(8089);
-        configureFor("localhost", 8089);
+        WireMock.configureFor("localhost", 8089);
         wireMockServer.start();
-        setupPaymentStubs();
+        PaymentStub.setupPaymentStubs();
     }
 
     static void stopServer() {
