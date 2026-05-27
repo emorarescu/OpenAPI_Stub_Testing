@@ -93,7 +93,7 @@
         <dependency>
             <groupId>org.wiremock</groupId>
             <artifactId>wiremock-standalone</artifactId>
-            <version>3.12.0</version>
+            <version>3.9.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -134,12 +134,12 @@
             <artifactId>javax.annotation-api</artifactId>
             <version>1.3.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.wiremock</groupId>
-            <artifactId>wiremock-standalone</artifactId>
-            <version>3.9.1</version>
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.wiremock</groupId>-->
+        <!--            <artifactId>wiremock-standalone</artifactId>-->
+        <!--            <version>3.9.1</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>

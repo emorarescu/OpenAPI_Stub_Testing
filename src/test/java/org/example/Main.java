@@ -1,6 +1,7 @@
 package org.example;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.*;
@@ -19,7 +20,7 @@ public class Main {
     public static WireMockServer wireMockServer;
 
     public static void main(String[] args) throws InterruptedException, AWTException {
-
+        SpringApplication.run(Main.class, args);
 //        RestAssured.baseURI = "https://dogapi.dog";
 //
 //        given()
