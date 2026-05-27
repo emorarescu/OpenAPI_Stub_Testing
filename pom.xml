@@ -76,12 +76,12 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.wiremock</groupId>-->
-<!--            <artifactId>wiremock</artifactId>-->
-<!--            <version>3.12.0</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.wiremock</groupId>-->
+        <!--            <artifactId>wiremock</artifactId>-->
+        <!--            <version>3.12.0</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
         <!--        <dependency>-->
         <!--            <groupId>com.github.tomakehurst</groupId>-->
@@ -97,12 +97,12 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.mockito</groupId>-->
-<!--            <artifactId>mockito-junit-jupiter</artifactId>-->
-<!--            <version>5.12.0</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.mockito</groupId>-->
+        <!--            <artifactId>mockito-junit-jupiter</artifactId>-->
+        <!--            <version>5.12.0</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -141,7 +141,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <!--            <plugin>-->
@@ -162,32 +161,40 @@
             <!--                        </goals>-->
             <!--                        <configuration>-->
             <!--                            <url>https://filesamples.com/samples/code/yaml/</url>-->
-<!--                            <fromFile>Homestead.yaml</fromFile>-->
+            <!--                            <fromFile>Homestead.yaml</fromFile>-->
             <!--                            <toDir>${project.basedir}/src/main/resources</toDir>-->
             <!--                        </configuration>-->
             <!--                    </execution>-->
             <!--                </executions>-->
             <!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>org.openapitools</groupId>-->
-<!--                <artifactId>openapi-generator-maven-plugin</artifactId>-->
-<!--                <version>7.13.0</version> &lt;!&ndash; Use the latest version from Maven Central &ndash;&gt;-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <inputSpec>${project.basedir}/src/main/resources/dog-api.yaml</inputSpec>-->
-<!--                            <generatorName>java</generatorName>-->
-<!--                            <configOptions>-->
-<!--                                <sourceFolder>src/gen/java/main</sourceFolder>-->
-<!--                                <library>resttemplate </library>-->
-<!--                            </configOptions>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.openapitools</groupId>-->
+            <!--                <artifactId>openapi-generator-maven-plugin</artifactId>-->
+            <!--                <version>7.13.0</version> &lt;!&ndash; Use the latest version from Maven Central &ndash;&gt;-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <goals>-->
+            <!--                            <goal>generate</goal>-->
+            <!--                        </goals>-->
+            <!--                        <configuration>-->
+            <!--                            <inputSpec>${project.basedir}/src/main/resources/dog-api.yaml</inputSpec>-->
+            <!--                            <generatorName>java</generatorName>-->
+            <!--                            <configOptions>-->
+            <!--                                <sourceFolder>src/gen/java/main</sourceFolder>-->
+            <!--                                <library>resttemplate </library>-->
+            <!--                            </configOptions>-->
+            <!--                        </configuration>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <mainClass>org.example.Main</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
